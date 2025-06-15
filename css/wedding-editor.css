@@ -1,0 +1,133 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #fff8f1, #f9ece6);
+  color: #5b3b2d;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #f0d5b8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #4a2f20;
+}
+
+/* Layout styling */
+.editor-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-controls {
+  width: 320px;
+  background-color: #fffdfb;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.form-controls label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #5b3b2d;
+}
+
+.form-controls input,
+.form-controls textarea,
+.form-controls select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccb8a1;
+  border-radius: 6px;
+  background-color: #fffaf6;
+}
+
+.form-controls textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn-group button {
+  background-color: #b98b67;
+  color: white;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-group button:hover {
+  background-color: #a87450;
+}
+
+/* Preview card styles */
+.preview-card {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  border: 2px solid #d6bfa7;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.preview-card .bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  position: absolute;
+  z-index: 0;
+}
+
+.text-layer {
+  position: absolute;
+  z-index: 1;
+  color: #4a2f20;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+.text-layer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-layer p {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
